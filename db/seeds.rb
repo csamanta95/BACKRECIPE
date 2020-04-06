@@ -9,6 +9,7 @@
 User.destroy_all
 Pantry.destroy_all
 Refrigerator.destroy_all
+Profile.destroy_all
 Comment.destroy_all
 
 u1= User.create(username: "samanta", password: "1234")
@@ -42,6 +43,8 @@ c1= Comment.create(user_id: u1.id, pantry_id: p1.id, refrigerator_id: r1.id, com
 c2= Comment.create(user_id: u1.id, pantry_id: p1.id, refrigerator_id: r1.id, comment: "Definately will make this againnn")
 c3= Comment.create(user_id: u1.id, pantry_id: p2.id, refrigerator_id: r2.id, comment: "best thing i had")
 
+profile1=Profile.create(user_id: u1.id, name: "4 INGREDIENT PESTO CHICKEN BAKE" , image: "https://i2.wp.com/www.simplysissom.com/wp-content/uploads/2017/08/Chicken-Pesto-Prep-3.5-3-1.jpg?w=680&ssl=1", level: "beginner", ingredient: "3 chicken breasts, organic recommended, 1 6 oz. jar basil pesto, 2 medium tomatoes, sliced, 3 –6 slices mozzarella cheese", direction: "1)Preheat the oven to 350° F. Season chicken breasts liberally with salt and pepper. 2)OPTIONAL STEP: While the oven is preheating you can heat some olive oil or butter in a skillet. Once hot add the chicken breast and sear for 1-2 minutes on each side until caramelized. The chicken should still be raw in the center. 3)Arrange chicken breasts (seared or raw) onto a baking dish or rimmed baking sheet. 4)Use a spoon to cover chicken with pesto. 5)Top each chicken breast with 1 slice of mozzarella cheese and 2 sliced tomatoes. 6)Bake for 20- 30 minutes (time will vary depending on thickness of chicken and whether or not it has been seared), or until chicken is no longer pink in the center. Broil the chicken the final 2 minutes so that the cheese is bubbly and golden. Serve immediately.", rating: 7)
+profile2=Profile.create(user_id: u1.id, name: "Ground Turkey Skillet with Green Beans Recipe", image: "https://i2.wp.com/www.primaverakitchen.com/wp-content/uploads/2015/09/Ground-Turkey-Skillet-with-Green-Beans-Primavera-Kitchen-3.jpg", level: "intermediate", ingredient: " 2 tablespoons extra virgin olive oil, 1 pound free-range extra-lean ground turkey, 1 teaspoon garlic — minced,  1/2 cup onions — diced, 1/2 cup yellow bell pepper — diced, 1 1/2cup green beans — chopped, 3/4 cup homemade tomato sauce or any other sauce of your preference, Salt and ground fresh black pepper, A pinch of crushed red pepper", direction: "1)In a skillet, heat the olive oil over medium-high heat. 2)Add the ground turkey, and break it up until it's in small pieces. 3)Once the turkey is almost cooked through, add the onion and garlic. Stir occasionally, and cook until the onions are golden brown. 4)Add yellow peppers, green beans, and homemade tomato sauce. 5)Cover the skillet, and cook until the vegetables are tender. 6)Add salt, pepper, and crushed red pepper to taste. 7)Serve warm and enjoy!", rating: 5)
 
 
 
